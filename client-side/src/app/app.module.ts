@@ -13,6 +13,7 @@ import { SettingsComponent, SettingsModule } from './settings';
 // import { BlockEditorModule, BlockEditorComponent } from './block-editor';
 
 import { config } from './app.config';
+import { ResourcePickerModule } from './resource-picker/resource-picker.module';
 
 @NgModule({
     declarations: [
@@ -23,6 +24,7 @@ import { config } from './app.config';
         // BlockModule,
         // BlockEditorModule,
         SettingsModule,
+        ResourcePickerModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,

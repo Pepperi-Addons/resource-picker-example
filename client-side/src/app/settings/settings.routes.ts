@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ResourcePickerComponent } from '../resource-picker/resource-picker.component';
 // import { SettingsComponent } from './settings.component';
 
 const routes: Routes = [
@@ -8,13 +9,17 @@ const routes: Routes = [
         // component: SettingsComponent,
         children: [
             {
-                path: ':form_key',
-                loadChildren: () => import('./editor-form/editor-form.module').then(m => m.EditorFormModule)
+                path: '',
+                component: ResourcePickerComponent
             },
-            {
-                path: '**',
-                loadChildren: () => import('./editor-list/editor-list.module').then(m => m.EditorListModule),
-            }
+            // {
+            //     path: ':form_key',
+            //     loadChildren: () => import('./editor-form/editor-form.module').then(m => m.EditorFormModule)
+            // },
+            // {
+            //     path: '**',
+            //     loadChildren: () => import('./editor-list/editor-list.module').then(m => m.EditorListModule),
+            // }
         ]
     }
 ];

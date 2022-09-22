@@ -80,10 +80,10 @@ class MyService {
 
     async upsertRelations() {
         // For settings block use this.
-        const blockRelationSlugName = 'CHANGE_TO_SETTINGS_SLUG_NAME';
-        const blockRelationGroupName = 'CHANGE_TO_SETTINGS_GROUP_NAME';
-        const blockRelationName = 'CHANGE_TO_SETTINGS_RELATION_NAME';
-        const blockRelationDescription = 'CHANGE_TO_SETTINGS_DESCRIPTION';
+        const blockRelationSlugName = 'resource_picker';
+        const blockRelationGroupName = 'Resource Picker';
+        const blockRelationName = 'SettingsBlock';
+        const blockRelationDescription = 'Resource picker';
         await this.upsertSettingsRelation(blockRelationSlugName, blockRelationGroupName, blockRelationName, blockRelationDescription);
 
         // For page block use this.

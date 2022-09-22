@@ -1,0 +1,21 @@
+<pep-page-layout [addPadding]="true">
+    <ng-container pep-top-area>
+        <h2> {{'ResourcePickerTitle' | translate}} </h2>
+    </ng-container>
+    <!--Body-->
+    <ng-container pep-main-area>
+        <mat-tab-group #tabGroup class="tabs" (selectedTabChange)="onTabChanged($event)">
+            <mat-tab label= "{{'Tabs.SingleSelection' | translate}}">
+                <!-- <ng-template matTabContent>Hello</ng-template> -->
+                <p *ngIf="currentTabIndex == 0">single selection works!!</p>
+            </mat-tab>
+            <mat-tab label= "{{'Tabs.MultiSelection' | translate}}">
+                <!-- <ng-template matTabContent>World!</ng-template> -->
+                <p *ngIf="currentTabIndex == 1">multi selection works!!</p>
+            </mat-tab>
+        </mat-tab-group>
+
+    </ng-container>
+</pep-page-layout>
+
+<pep-size-detector></pep-size-detector>
