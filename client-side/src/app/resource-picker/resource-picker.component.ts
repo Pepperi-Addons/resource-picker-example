@@ -12,8 +12,6 @@ export class ResourcePickerComponent implements OnInit {
   ngOnInit(): void {
   }
   onTabChanged($event){
-    // console.log(`${JSON.stringify($event)}`);
-    debugger
     this.currentTabIndex = $event.index
   }
 
