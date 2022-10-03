@@ -1,5 +1,4 @@
-import { Component, ComponentRef, OnInit, ViewChild, ViewContainerRef, ViewRef } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { Component, OnInit, ViewChild, ViewContainerRef, ViewRef } from '@angular/core';
 import { PepChipsComponent } from '@pepperi-addons/ngx-lib/chips';
 import { PepAddonBlockLoaderService } from '@pepperi-addons/ngx-lib/remote-loader';
 import { ResourcePickerService } from 'src/app/services/resource-picker.service';
