@@ -1,0 +1,17 @@
+<pep-select
+    [value] = 'selectedView'
+    label = "{{'View' | translate}}" 
+    type = 'select'
+    [mandatory] = 'true'
+    [disabled] = 'false'
+    [options] = 'viewsDropDown'
+    (valueChange) = 'onViewChanged($event)'
+    [emptyOption]="false">
+</pep-select>
+
+<pep-chips #chipsComp
+ [chips]="chips" 
+ placeholder="Add selected object key">
+</pep-chips>
+
+<div #resourcePickerContainer></div>

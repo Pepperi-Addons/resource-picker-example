@@ -1,0 +1,29 @@
+<pep-select
+    [value] = 'selectedResource'
+    label = "{{'Resource' | translate}}" 
+    type = 'select'
+    [mandatory] = 'true'
+    [disabled] = 'false'
+    [options] = 'resourcesDropDown'
+    (valueChange) = 'onResourceChanged($event)'
+    [emptyOption]="false">
+</pep-select>
+
+<pep-textbox
+    [(value)] = "selectedObjectKey"
+    label="{{'SelectObjectLabel' | translate }}"
+    type="text"
+></pep-textbox>
+
+<pep-button
+    class= 'pep-spacing-element'
+    value = " {{'Open' | translate }} "
+    styleType= 'strong'
+    sizeType= 'md'
+    classNames= 'save'
+    [disabled]= '!isResourceSelected'
+    (buttonClick)='onButtonClicked()'
+></pep-button>
+
+
+

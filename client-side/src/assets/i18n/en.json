@@ -3,5 +3,7 @@
     "Tabs": {
         "SingleSelection": "Single Selection",
         "MultiSelection": "Multi Selection"
-    }
+    },
+    "Resource": "Resource",
+    "SelectObjectLabel" : "Selected object keys"
 }
