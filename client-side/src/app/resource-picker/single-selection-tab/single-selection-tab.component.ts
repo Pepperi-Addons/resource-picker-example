@@ -47,7 +47,7 @@ export class SingleSelectionTabComponent implements OnInit {
     const hostObj = this.getResourcePickerHostObj()
     this.resourcePickerCompRef = this.addonBlockService.loadAddonBlockInDialog({
       container: this.viewContainerRef,
-      name: 'ResourceSelection',
+      name: 'ResourcePicker',
       hostObject: hostObj,
       hostEventsCallback: (event) => { this.onEvent(event); }
     })

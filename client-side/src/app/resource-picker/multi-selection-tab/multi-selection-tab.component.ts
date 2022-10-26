@@ -49,7 +49,7 @@ export class MultiSelectionTabComponent implements OnInit {
     this.resourcePickerContainer.clear()
     this.addonBlockService.loadAddonBlockInContainer({
       container: this.resourcePickerContainer,
-      name: 'ResourceSelection',
+      name: 'ResourcePicker',
       hostObject: hostObj,
       hostEventsCallback: (event) => { this.onEvent(event); }
     })
@@ -59,7 +59,7 @@ export class MultiSelectionTabComponent implements OnInit {
     return {
       resource: this.selectedView?.Resource?.Name,
       view: this.selectedView?.Key,
-      selectionMode: 'single',
+      selectionMode: 'multi',
       selectedObjectKeys: selectedObjectKeys
     }
   }
